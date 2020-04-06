@@ -19,7 +19,7 @@ delayMicroseconds(10);
 digitalWrite(trigPin, LOW);
 // Reads the echoPin, returns the sound wave travel time in microseconds
 duration = pulseIn(echoPin, HIGH);
-// Calculating the distance
+// Calculating the distance/ speed of sound, of course! Its 340 m/s. We have to convert the speed of sound into cm/µs 
 distance= duration*0.034/2;
 // Prints the distance on the Serial Monitor
 Serial.print("Distance: ");
